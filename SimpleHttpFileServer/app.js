@@ -12,7 +12,8 @@ eventEmitter.on("onRequestCompleted", onRequestCompletedEventHandler);
 eventEmitter.on("processingError", processingErrorEventHandler);  
 
 function processingErrorEventHandler(response){ 
-    response.sendStatus(404);
+    response.writeHead(404,{'Content-Type' : 'text/html'});
+    response.end('<html><body><h2 style="color:red">File not found!!!</h2></body></html>');
 }
 
 function onRequestReceivedEventHandler(request, response){ 

@@ -1,0 +1,14 @@
+{
+  "name": "mongodb-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "connect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mongodb": "^3.3.2"
+  }
+}
